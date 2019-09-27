@@ -1,0 +1,14 @@
+<div class="row" style="padding-top: 50px">
+	<div class="col-md-8 offset-md-2">
+		<app-new-task></app-new-task>
+		<table class="table">
+		  <tbody>
+		    <tr *ngFor="let task of tasks">
+		      <th scope="row" >
+		      	<input type="checkbox" class="" id="customControlInline">{{ task.content }}
+		      </th>
+		    </tr>
+		  </tbody>
+		</table>
+	</div>
+</div>
