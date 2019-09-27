@@ -1,18 +1,25 @@
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
-  <a class="navbar-brand" href="#">Navbar w/ text</a>
+  <a class="navbar-brand" href="#">ClikTask</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarText">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="tasks">Mes projets</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
         <a class="nav-link" routerLink="tasks">Mes tâches</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
+      <li class=" nav-item dropdown">
+          <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Ajouter
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Tâche</a>
+            <a class="dropdown-item" href="#">Projet</a>
+            <a class="dropdown-item" href="#"></a>
+          </div>
       </li>
     </ul>
     <span class="navbar-text">

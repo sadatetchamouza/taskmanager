@@ -30,6 +30,10 @@ export class TaskListComponent implements OnInit, OnDestroy {
   	this.taskService.checkTask(task);
   }
 
+  onRemoveTask(task: Task){
+    this.taskService.removeTask(task);
+  }
+
   ngOnDestroy(){
   	this.taskSubscription.unsubscribe();
   }

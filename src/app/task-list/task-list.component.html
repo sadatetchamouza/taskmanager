@@ -1,14 +1,19 @@
 <div class="row" style="padding-top: 50px">
 	<div class="col-md-8 offset-md-2">
 		<app-new-task></app-new-task>
-		<table class="table">
-		  <tbody>
-		    <tr *ngFor="let task of tasks">
-		      <th scope="row" >
-		      	<input type="checkbox" class="" id="customControlInline">{{ task.content }}
-		      </th>
-		    </tr>
-		  </tbody>
-		</table>
+		<ul class="list-group">
+			<li class="list-group-item" *ngFor="let task of tasks">
+				<span class="hover-cursor" 
+				[ngClass]="{'text-success': task.checked}" 
+				(click)="onCheckTask(task)">
+					<i class="fa fa-lg" [ngClass]="{'fa-check-circle-o': task.checked, 
+					'fa-circle-thin': !task.checked } "></i>
+				</span>
+				{{task.content}}
+				<span class="hover-cursor text-danger pull-right" (click)="onRemoveTask(task)">
+					<i class="fa fa-trash-o fa-lg"></i>
+				</span>
+			</li>				
+		</ul>
 	</div>
 </div>

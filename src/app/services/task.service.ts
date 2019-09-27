@@ -36,9 +36,26 @@ export class TaskService {
   }
 
   checkTask(task: Task){
-  	task.checked = true;
+    if(task.checked){
+      task.checked = false;
+    }else{
+      task.checked = true;
+    }
   	this.emitTasks();
   	this.saveTasks();
+  }
+
+  removeTask(task: Task){
+    const taskIndexToRemove = this.tasks.findIndex(
+      (taskEl) => {
+        if(taskEl === task){
+          return true;
+        }
+      }
+    );
+    this.tasks.splice(taskIndexToRemove, 1);
+    this.saveTasks();
+    this.emitTasks();
   }
 
 

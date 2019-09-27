@@ -1,0 +1,8 @@
+[2019-09-27 12:30:18.537] [sharedprocess] [info] main {"machineId":"ea6adf8acbc4a4d08a9df63c9ea64e54b0a7b7645ab68d01e8bc0ca34560ede8"}
+[2019-09-27 12:30:58.525] [sharedprocess] [info] Starting to clean up unused language packs.
+[2019-09-27 12:31:43.262] [sharedprocess] [info] Installing extension: johnpapa.angular2
+[2019-09-27 12:31:48.053] [sharedprocess] [info] Downloaded extension: johnpapa.angular2 /tmp/6117cb3a-274f-45f8-a3d4-864d36ab3dca
+[2019-09-27 12:31:48.312] [sharedprocess] [info] Extracted extension to /root/.vscode/extensions/.johnpapa.angular2-8.1.1: johnpapa.angular2
+[2019-09-27 12:31:48.312] [sharedprocess] [info] Renamed to /root/.vscode/extensions/johnpapa.angular2-8.1.1
+[2019-09-27 12:31:48.314] [sharedprocess] [info] Installation completed. johnpapa.angular2
+[2019-09-27 12:31:48.347] [sharedprocess] [info] Extensions installed successfully: johnpapa.angular2
